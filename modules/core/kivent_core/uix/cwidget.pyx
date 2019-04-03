@@ -17,7 +17,7 @@ from kivy.uix.widget import (_widget_destructors, WidgetException,
 cdef WidgetBase = WidgetMetaclass('WidgetBase', (EventDispatcher, ), {})
 
 cdef class CWidget(WidgetBase):
-   '''Widget class. See module documentation for more information.
+    '''Widget class. See module documentation for more information.
 
     :Events:
         `on_touch_down`:
