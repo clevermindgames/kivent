@@ -60,6 +60,8 @@ cdef class CWidget(EventDispatcher):
 
     __metaclass__ = WidgetMetaclass
     __events__ = ('on_touch_down', 'on_touch_move', 'on_touch_up')
+    _disabled_value = False
+    _disabled_count = 0
 
     property canvas:
         def __get__(self):
@@ -88,14 +90,14 @@ cdef class CWidget(EventDispatcher):
             self._context = get_current_context()
 
         no_builder = '__no_builder' in kwargs
-        self._disabled_value = False
+        
         if no_builder:
             del kwargs['__no_builder']
         on_args = {k: v for k, v in kwargs.items() if k[:3] == 'on_'}
         for key in on_args:
             del kwargs[key]
 
-        self._disabled_count = 0
+        
 
         super(CWidget, self).__init__(**kwargs)
 
