@@ -60,8 +60,8 @@ cdef class CWidget(EventDispatcher):
 
     __metaclass__ = WidgetMetaclass
     __events__ = ('on_touch_down', 'on_touch_move', 'on_touch_up')
-    _disabled_value = False
-    _disabled_count = 0
+    _disabled_value = BooleanProperty(False)
+    _disabled_count = NumericProperty(0)
 
     property canvas:
         def __get__(self):
