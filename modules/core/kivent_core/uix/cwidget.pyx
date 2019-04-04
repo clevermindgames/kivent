@@ -60,8 +60,8 @@ cdef class CWidget(EventDispatcher):
 
     __metaclass__ = WidgetMetaclass
     __events__ = ('on_touch_down', 'on_touch_move', 'on_touch_up')
-    _disabled_value = BooleanProperty(False)
-    _disabled_count = NumericProperty(0)
+    _disabled_value = False
+    _disabled_count = 0
 
     property canvas:
         def __get__(self):
@@ -951,26 +951,28 @@ cdef class CWidget(EventDispatcher):
 
     def set_disabled(self, value):
         if value != self._disabled_value:
-            self._disabled_value = value
-            if value:
-                self.inc_disabled()
-            else:
-                self.dec_disabled()
+            #self._disabled_value = value
+            #if value:
+            #    self.inc_disabled()
+            #else:
+            #    self.dec_disabled()
             return True
 
     def inc_disabled(self, count=1):
-        self._disabled_count += count
-        if self._disabled_count - count < 1 <= self._disabled_count:
-            self.property('disabled').dispatch(self)
-        for c in self.children:
-            c.inc_disabled(count)
+        pass
+        #self._disabled_count += count
+        #if self._disabled_count - count < 1 <= self._disabled_count:
+        #    self.property('disabled').dispatch(self)
+        #for c in self.children:
+        #    c.inc_disabled(count)
 
     def dec_disabled(self, count=1):
-        self._disabled_count -= count
-        if self._disabled_count <= 0 < self._disabled_count + count:
-            self.property('disabled').dispatch(self)
-        for c in self.children:
-            c.dec_disabled(count)
+        pass
+        #self._disabled_count -= count
+        #if self._disabled_count <= 0 < self._disabled_count + count:
+        #    self.property('disabled').dispatch(self)
+        #for c in self.children:
+        #    c.dec_disabled(count)
 
     disabled = AliasProperty(get_disabled, set_disabled)
     '''Indicates whether this widget can interact with input or not.
