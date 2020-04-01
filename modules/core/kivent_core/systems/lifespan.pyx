@@ -1,3 +1,4 @@
+# cython: language_level=3
 from kivent_core.systems.staticmemgamesystem cimport (StaticMemGameSystem, 
     MemComponent)
 from kivy.properties import (StringProperty, BooleanProperty, ListProperty,

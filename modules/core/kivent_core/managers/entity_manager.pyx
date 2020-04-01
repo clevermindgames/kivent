@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: embedsignature=True
 from kivent_core.memory_handlers.membuffer cimport Buffer
 from kivent_core.memory_handlers.zone cimport MemoryZone

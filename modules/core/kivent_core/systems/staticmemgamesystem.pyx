@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: embedsignature=True
 '''
 **StaticMemGameSystem** and **MemComponent** are the basis for all built in

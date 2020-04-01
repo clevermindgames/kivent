@@ -1,3 +1,4 @@
+# cython: language_level=3
 from cpython cimport bool
 from kivent_core.memory_handlers.membuffer cimport Buffer
 

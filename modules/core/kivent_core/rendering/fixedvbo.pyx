@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: embedsignature=True
 from kivy.graphics.context cimport Context, get_context
 from kivy.graphics.cgl cimport (GL_ARRAY_BUFFER, GL_STREAM_DRAW,

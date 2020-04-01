@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: embedsignature=True
 from kivent_core.systems.staticmemgamesystem cimport (StaticMemGameSystem,
     MemComponent)

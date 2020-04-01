@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: embedsignature=True
 '''
 The builtin GameSystems all use the IndexedMemoryZone to manage their memory

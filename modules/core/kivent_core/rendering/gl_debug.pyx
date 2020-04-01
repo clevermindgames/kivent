@@ -1,3 +1,4 @@
+# cython: language_level=3
 from kivy.graphics.cgl cimport GLenum, cgl
 from kivy.logger import Logger
 

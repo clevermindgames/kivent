@@ -1,3 +1,4 @@
+# cython: language_level=3
 from block cimport MemoryBlock
 from membuffer cimport Buffer
 from zone cimport MemoryZone

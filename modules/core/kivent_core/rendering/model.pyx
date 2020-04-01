@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: embedsignature=True
 cdef extern from "string.h":
     void *memcpy(void *dest, void *src, size_t n)

@@ -1,3 +1,4 @@
+# cython: language_level=3
 from kivent_core.memory_handlers.block cimport MemoryBlock
 from vertex_format cimport KEVertexFormat
 from fixedvbo cimport FixedVBO

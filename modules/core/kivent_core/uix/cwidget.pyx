@@ -1,3 +1,4 @@
+# cython: language_level=3
 from kivy._event cimport EventDispatcher
 from kivy.factory import Factory
 from kivy.properties import (NumericProperty, StringProperty, AliasProperty,

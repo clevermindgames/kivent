@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: embedsignature=True
 from kivy.graphics.vertex cimport vertex_attr_t, VertexFormat
 from kivy.graphics.vertex import VertexFormatException

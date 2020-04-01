@@ -1,3 +1,4 @@
+# cython: language_level=3
 from kivy.core.audio import SoundLoader
 from kivy._event cimport EventDispatcher
 from kivy.clock import Clock

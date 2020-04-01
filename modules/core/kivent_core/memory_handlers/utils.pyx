@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: embedsignature=True
 from indexing cimport IndexedMemoryZone, ZoneIndex
 from zone cimport MemoryZone

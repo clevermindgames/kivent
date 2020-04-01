@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: profile=True
 # cython: embedsignature=True
 from kivy.graphics.instructions cimport VertexInstruction

@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: embedsignature=True
 from gamesystem cimport GameSystem
 from kivy.core.window import Window

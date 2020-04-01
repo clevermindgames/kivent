@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: embedsignature=True
 import json
 from os import path

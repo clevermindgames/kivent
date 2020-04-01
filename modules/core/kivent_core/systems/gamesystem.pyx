@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: embedsignature=True
 '''
 This is the base for creating a GameSystem usable from python. It will

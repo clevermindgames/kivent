@@ -1,3 +1,4 @@
+# cython: language_level=3
 # cython: embedsignature=True
 from kivent_core.managers.game_manager cimport GameManager
 '''

@@ -1,3 +1,4 @@
+# cython: language_level=3
 from cython cimport Py_ssize_t
 cdef extern from "Python.h":
     ctypedef int Py_intptr_t

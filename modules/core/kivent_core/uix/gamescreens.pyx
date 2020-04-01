@@ -1,3 +1,4 @@
+# cython: language_level=3
 from kivy.properties import StringProperty
 from kivy.uix.screenmanager import ScreenManager, Screen
 

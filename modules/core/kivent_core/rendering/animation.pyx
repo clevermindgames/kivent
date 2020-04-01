@@ -1,3 +1,4 @@
+# cython: language_level=3
 from kivent_core.managers.resource_managers cimport ModelManager
 from kivent_core.managers.resource_managers import texture_manager
 from kivent_core.rendering.model cimport VertexModel
