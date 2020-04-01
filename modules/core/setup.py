@@ -172,7 +172,6 @@ def build_extensions_for_modules(ext_list, modules):
                         include_dirs=kivy.get_includes())
         if environ.get('READTHEDOCS', None) == 'True':
             ext.pyrex_directives = {'embedsignature': True}
-        ext.pyrex_directives['language_level'] = 3
         ext_a(ext)
     return ext_list
 
